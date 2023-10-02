@@ -1,25 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/feminino.css";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from './assets/jarrada.png';
-import React from "react";
 
 function Feminino() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
   return (
     <>
-      <h4>React-Bootstrap Carousel Component</h4>
       <Carousel>
         <Carousel.Item>
           <img
@@ -31,6 +22,12 @@ function Feminino() {
           <img
             src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
             alt="Image Two"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            src="a"
+            alt="Image 3"
           />
         </Carousel.Item>
       </Carousel>
