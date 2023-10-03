@@ -1,7 +1,7 @@
 
 const users = [
   { email: "usuario1@example.com", password: "senha123", name: "Usuário 1" },
-  { email: "usuario2@example.com", password: "senha456", name: "Usuário 2" },
+  { email: "contatogalofiap@gmail.com", password: "123456", name: "Galo" },
 ];
 
 function auth(email, password) {

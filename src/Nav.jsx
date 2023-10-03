@@ -1,83 +1,31 @@
-import {} from 'react';
+import { } from 'react';
 import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from './css/nav.module.css';
-import galo from './assets/galo-logo.png'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-function Nav() {
+function Header() {
   return (
     /*div principal */
-    <div className="container-my-4">
-      {/* nav  */}
-      <nav className="navbar navbar-expand-lg mb-4">
-        {/* container do menu nav */}
-        <div className="container-fluid">
-          {/* logo */}
-          <a className="navbar-brand" href="#">
-            {/* links dos elementos e chamando estilzação css modules*/}
-            <ul className="navbar-nav-ms-auto">
-              <a className="logo">
-              <NavLink to="/" className={styles.hlink} ><img
-              src={galo}
-              className="logo"
-              alt="imagem do logo"
-              />
-              </NavLink>
-              </a>
-              <a className="nav-item">
-                <NavLink to="casual" className="nav-link">
-                  <h6 className={styles.tlink}>Casual</h6>
-                </NavLink>
-              </a>
-              <a className="nav-item ">
-                <NavLink to="masculino" className="nav-link">
-                  <h6 className={styles.tlink}>Masculino</h6>
-                </NavLink>
-              </a>
-              <a className="nav-item">
-                <NavLink to="feminino" className="nav-link">
-                  <h6 className={styles.tlink}>Feminino</h6>
-                </NavLink>
-              </a>
-              <a className="nav-item">
-                <NavLink to="outlet" className="nav-link">
-                  <h6 className={styles.tlink}>Outlet</h6>
-                </NavLink>
-              </a>
-            </ul>
-          </a>
-          {/* botão  para criar a menu hamburguer */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        {/* menu nav do carrinho e login */}
-        <div className="collapse-navbar-collapse" id="  Nav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <NavLink to="carrinho" className="nav-link-carrinho">
-                <h6 className={styles.tlink1}>Carrinho</h6>
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="login" className="nav-link-login">
-                <h6 className={styles.tlink1}>Login</h6>
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-        {/* final do nav */}
-      </nav>
-      {/* final da div principal */}
-    </div>
+    <Navbar collapseOnSelect expand="lg" className="body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">Galo Cloth</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link><NavLink to="casual">Casual</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="masculino">Masculino</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="feminino">Feminino</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="outlet">Outlet</NavLink></Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link><NavLink to="carrinho">Carrinho</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="login">Login</NavLink></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
-export default Nav;
+export default Header;

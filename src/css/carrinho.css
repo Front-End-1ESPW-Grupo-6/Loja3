@@ -1,0 +1,48 @@
+.cartHeader{
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    align-items: center;
+}
+.cartHeader h2,
+.cartHeader h1{
+    margin: 0;
+}
+.itemContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 1px 1px 5px rgba(87, 87, 87, 0.644);
+    border-radius: 20px;
+    margin: 1em;
+}
+.itemContainer p,
+.itemContainer h3{
+    margin: 0;
+}
+
+.itemImg{
+    width: 5em;
+}
+
+.iconCount{
+    background-color: transparent;
+    border: none;
+    padding: 1em;
+}
+
+.iconCount img{
+    width: 40px; 
+}
+
+.numberCount{
+    border: 1px solid black;
+    padding: 0.5em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(87, 87, 87, 0.644);
+}
+
+.addBtn{
+    margin: 1em;
+}

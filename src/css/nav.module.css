@@ -1,7 +1,7 @@
-.hlink img{
+.hlink{
   color: #000000;
   width: 20%;
-  height: auto;
+  margin-left: 1em;
 }
 .tlink{
   text-decoration: none;
@@ -12,20 +12,4 @@
   text-decoration: none;
   color: #1d1d1d;
 }
-
-.navbar-brand,
-.nav-link-login,
-.nav-item{
-  text-decoration: none;
-}
-
-.navbar-brand,
-.nav-link,
-.tlink,
-.tlink1 {
-  font-family: 'Arial', sans-serif;
-  font-size: 21px;
-  display: inline-flex
-}
-
 

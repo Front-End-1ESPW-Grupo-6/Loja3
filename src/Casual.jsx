@@ -15,20 +15,9 @@ import ProdutoDetail4 from "./assets/product-detail-4.jpg";
 import Carousel from "react-bootstrap/Carousel";
 import img1Carousel from "./assets/carrosel1.png";
 import img2Carousel from "./assets/carrosel2.png";
-import BuyButton from "./BuyButton";
 import "./css/casual.css";
 
 function Casual() {
-  const [cartItems, setCartItems] = useState([]);
-
-  const addItemToCart = (nome, imagem) => {
-    const newItem = {
-      nome,
-      imagem,
-    };
-
-    setCartItems([...cartItems, newItem]);
-  };
 
   return (
     <>
@@ -97,11 +86,9 @@ function Casual() {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               ratione, nostrum cupiditate repellendus distinctio obcaecati!
             </p>
-            <BuyButton
-              nome="Red digital"
-              url={ProdutoDetail1}
-              onClick={() => addItemToCart("Red digital", ProdutoDetail1)}
-            />
+            <button className="btn btn-outline-dark my-3">
+              Adicionar ao Carrinho
+            </button>
           </div>
         </div>
       </section>

@@ -1,9 +1,10 @@
 import plus from "./assets/mais.png"
 import minus from "./assets/menos.png"
 import trash from "./assets/lixo.png"
+import "./css/carrinho.css"
 import { useState } from "react";
 
-function AddCart({ nome, imagem, onRemove}) {
+function AddCart({ nome, imagem, valor, onRemove }) {
     const [count, setCount] = useState(1);
 
     const incrementCount = () => {
@@ -22,20 +23,23 @@ function AddCart({ nome, imagem, onRemove}) {
 
 
     return (
+        <div className="itemContainer">
+            <img className="itemImg" src={imagem} alt={nome} />
+            <p>{nome}</p>
             <div>
-                <img src={imagem} alt={nome} />
-                <p>{nome}</p>
-                <button onClick={decrementCount}>
+                <button className="iconCount" onClick={decrementCount}>
                     <img src={minus} alt="" />
                 </button>
-                <span>{count}</span>
-                <button onClick={incrementCount}>
+                <span className="numberCount">{count}</span>
+                <button className="iconCount" onClick={incrementCount}>
                     <img src={plus} alt="" />
                 </button>
-                <button onClick={() => onRemove(nome)}>
-                    <img src={trash} alt="" />
-                </button>
             </div>
+            <h3>{valor*count}</h3>
+            <button className="iconCount" onClick={() => onRemove(nome)}>
+                <img src={trash} alt="" />
+            </button>
+        </div>
     )
 }
 
