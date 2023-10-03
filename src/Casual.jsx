@@ -1,37 +1,43 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Produto1 from './assets/product-1.jpg';
-import Produto2 from './assets/product-2.jpg';
-import Produto3 from './assets/product-3.jpg';
-import Produto4 from './assets/product-4.jpg';
-import Produto5 from './assets/product-5.jpg';
-import Produto6 from './assets/product-6.jpg';
-import Produto7 from './assets/product-7.jpg';
-import Produto8 from './assets/product-8.jpg';
-import ProdutoDetail1 from './assets/product-detail-1.jpg';
-import ProdutoDetail2 from './assets/product-detail-2.jpg';
-import ProdutoDetail3 from './assets/product-detail-3.jpg';
-import ProdutoDetail4 from './assets/product-detail-4.jpg';
-import Carousel from 'react-bootstrap/Carousel';
-import img1Carousel from './assets/carrosel1.png';
-import img2Carousel from './assets/carrosel2.png';
+import React, { useState } from "react";
+import Produto1 from "./assets/product-1.jpg";
+import Produto2 from "./assets/product-2.jpg";
+import Produto3 from "./assets/product-3.jpg";
+import Produto4 from "./assets/product-4.jpg";
+import Produto5 from "./assets/product-5.jpg";
+import Produto6 from "./assets/product-6.jpg";
+import Produto7 from "./assets/product-7.jpg";
+import Produto8 from "./assets/product-8.jpg";
+import ProdutoDetail1 from "./assets/product-detail-1.jpg";
+import ProdutoDetail2 from "./assets/product-detail-2.jpg";
+import ProdutoDetail3 from "./assets/product-detail-3.jpg";
+import ProdutoDetail4 from "./assets/product-detail-4.jpg";
+import Carousel from "react-bootstrap/Carousel";
+import img1Carousel from "./assets/carrosel1.png";
+import img2Carousel from "./assets/carrosel2.png";
+import BuyButton from "./BuyButton";
 import "./css/casual.css";
 
-
 function Casual() {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addItemToCart = (nome, imagem) => {
+    const newItem = {
+      nome,
+      imagem,
+    };
+
+    setCartItems([...cartItems, newItem]);
+  };
+
   return (
     <>
       <Carousel>
         <Carousel.Item>
-          <img
-            src={img1Carousel}
-            alt="Image One"
-          />
+          <img src={img1Carousel} alt="Image One" />
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            src={img2Carousel}
-            alt="Image Two"
-          />
+          <img src={img2Carousel} alt="Image Two" />
         </Carousel.Item>
       </Carousel>
 
@@ -91,9 +97,11 @@ function Casual() {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               ratione, nostrum cupiditate repellendus distinctio obcaecati!
             </p>
-            <a href="" className="btn btn-dark my-3">
-              Adicionar ao carrinho
-            </a>
+            <BuyButton
+              nome="Red digital"
+              url={ProdutoDetail1}
+              onClick={() => addItemToCart("Red digital", ProdutoDetail1)}
+            />
           </div>
         </div>
       </section>

@@ -2,40 +2,48 @@ import {} from 'react';
 import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './css/nav.module.css';
+import galo from './assets/galo-logo.png'
 
 function Nav() {
   return (
     /*div principal */
-    <div className="container my-4 ">
+    <div className="container-my-4">
       {/* nav  */}
       <nav className="navbar navbar-expand-lg mb-4">
         {/* container do menu nav */}
         <div className="container-fluid">
           {/* logo */}
           <a className="navbar-brand" href="#">
-            <NavLink to="/" className={styles.hlink} >MyShop</NavLink>
             {/* links dos elementos e chamando estilzação css modules*/}
-            <ul className="navbar-nav ms-auto ">
-              <li className="nav-item">
+            <ul className="navbar-nav-ms-auto">
+              <a className="logo">
+              <NavLink to="/" className={styles.hlink} ><img
+              src={galo}
+              className="logo"
+              alt="imagem do logo"
+              />
+              </NavLink>
+              </a>
+              <a className="nav-item">
                 <NavLink to="casual" className="nav-link">
                   <h6 className={styles.tlink}>Casual</h6>
                 </NavLink>
-              </li>
-              <li className="nav-item ">
+              </a>
+              <a className="nav-item ">
                 <NavLink to="masculino" className="nav-link">
                   <h6 className={styles.tlink}>Masculino</h6>
                 </NavLink>
-              </li>
-              <li className="nav-item">
+              </a>
+              <a className="nav-item">
                 <NavLink to="feminino" className="nav-link">
                   <h6 className={styles.tlink}>Feminino</h6>
                 </NavLink>
-              </li>
-              <li className="nav-item">
+              </a>
+              <a className="nav-item">
                 <NavLink to="outlet" className="nav-link">
                   <h6 className={styles.tlink}>Outlet</h6>
                 </NavLink>
-              </li>
+              </a>
             </ul>
           </a>
           {/* botão  para criar a menu hamburguer */}
@@ -52,7 +60,7 @@ function Nav() {
           </button>
         </div>
         {/* menu nav do carrinho e login */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse-navbar-collapse" id="  Nav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink to="carrinho" className="nav-link-carrinho">

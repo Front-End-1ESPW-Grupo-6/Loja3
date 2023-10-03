@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
-import AddCarrinho from './carrinhoScript';
+import React, { useState } from "react";
+import AddCart from "./carrinhoScript";
 
 function Carrinho() {
   const [carrinho, setCarrinho] = useState([]);
 
-  const addItemCarrinho  = () => {
-    
+  const addNewItem = (nome, imagem) => {
     const newItem = {
-      nome: 'Nome do Item',
-      imagem: 'URL da Imagem do Item',
+      nome,
+      imagem,
     };
 
     setCarrinho([...carrinho, newItem]);
@@ -19,16 +18,16 @@ function Carrinho() {
     setCarrinho(novoCarrinho);
   };
 
-
   return (
     <>
-      <div>
-        <button onClick={addItemCarrinho}>Adicionar Carrinho</button>
-      </div>
-
       <div className="carrinho-itens">
         {carrinho.map((item, index) => (
-          <AddCarrinho key={index} nome={item.nome} imagem={item.imagem} onRemove={removeItemCarrinho}/>
+          <AddCart
+            key={index}
+            nome={item.nome}
+            imagem={item.imagem}
+            onRemove={removeItemCarrinho}
+          />
         ))}
       </div>
     </>

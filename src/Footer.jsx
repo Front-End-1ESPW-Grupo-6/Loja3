@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Footer() {
         return (
             <section className="p-5 mt-4 bg-dark text-center text-light">

@@ -1,13 +1,31 @@
-.hlink{
+.hlink img{
   color: #000000;
+  width: 20%;
+  height: auto;
 }
 .tlink{
- color: #1d1d1d;
+  text-decoration: none;
+  color: #1d1d1d;
 }
 .tlink1{
-  padding: 4px;
+  padding: 8px; /* Increased padding for better touch targets */
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+.navbar-brand,
+.nav-link-login,
+.nav-item{
   text-decoration: none;
 }
-.navbar-brand{
-  text-decoration: none;
+
+.navbar-brand,
+.nav-link,
+.tlink,
+.tlink1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 21px;
+  display: inline-flex
 }
+
+

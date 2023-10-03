@@ -3,7 +3,7 @@ import minus from "./assets/menos.png"
 import trash from "./assets/lixo.png"
 import { useState } from "react";
 
-function AddCarrinho({ nome, imagem, onRemove}) {
+function AddCart({ nome, imagem, onRemove}) {
     const [count, setCount] = useState(1);
 
     const incrementCount = () => {
@@ -39,4 +39,4 @@ function AddCarrinho({ nome, imagem, onRemove}) {
     )
 }
 
-export default AddCarrinho
+export default AddCart
