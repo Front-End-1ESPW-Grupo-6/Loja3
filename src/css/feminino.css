@@ -4,3 +4,14 @@
     justify-content:space-between;
     margin:90px;
     }
+
+.Carrossel_fem img{
+    width: 100em;
+    height: 50em;
+}
+
+.productImg img{
+    padding: 1em;
+    width: 352px;
+    height: 23em;
+}

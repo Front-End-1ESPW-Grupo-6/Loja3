@@ -10,7 +10,7 @@ function Header() {
     /*div principal */
     <Navbar collapseOnSelect expand="lg" className="body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Galo Cloth</Navbar.Brand>
+        <Navbar.Brand href="/">Galo Cloth</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

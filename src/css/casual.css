@@ -3,4 +3,15 @@
   flex-wrap:wrap;
   justify-content:space-between;
   margin:90px;
-  }
+}
+
+.productImg img{
+    padding: 1em;
+    width: 352px;
+    height: 23em;
+}
+
+.Carrossel_casual img{
+  width: 100em;
+  height: 50em;
+}

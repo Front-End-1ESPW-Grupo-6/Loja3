@@ -1,16 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from 'react-bootstrap/Carousel';
-import img1Carousel from './assets/carrosel1.png';
-import img2Carousel from './assets/carrosel2.png';
-import img3Carousel from './assets/carrosel3.jpg';
+import img1Carousel from './assets/mas_carrou_1.jpg';
+import img2Carousel from './assets/mas_carrou_2.jpg';
+import img3Carousel from './assets/mas_carrou_3.jpg';
 import Produto1 from './assets//mas_1.png';
 import Produto2 from './assets/mas_2.png';
 import Produto3 from './assets/mas_3.png';
-import Produto4 from './assets/product-4.jpg';
-import Produto5 from './assets/product-5.jpg';
-import Produto6 from './assets/product-6.jpg';
-import Produto7 from './assets/product-7.jpg';
-import Produto8 from './assets/product-8.jpg';
+import Produto4 from './assets/mas_4.png';
+import Produto5 from './assets/mas_5.png';
+import Produto6 from './assets/mas_6.png';
+import Produto7 from './assets/mas_7.png';
+import Produto8 from './assets/mas_8.png';
 import ProdutoDetail1 from './assets/mas_3.png';
 import ProdutoDetail2 from './assets/mas_3_2.png';
 import ProdutoDetail3 from './assets/mas_3_1.png';
@@ -20,7 +20,7 @@ import "./css/masculino.css";
 function Masculino() {
   return (
     <>
-      <Carousel>
+      <Carousel className="Carrossel_mas">
         <Carousel.Item>
           <img
             src={img1Carousel}
@@ -97,59 +97,55 @@ function Masculino() {
             <p className="my-3">
             Esta camiseta preta é uma escolha clássica e versátil para qualquer guarda-roupa. Feita com tecido macio e confortável, ela proporciona um ajuste perfeito e é ideal para uso diário. Com seu design minimalista, esta camiseta é perfeita para combinar com uma variedade de estilos e ocasiões. A cor preta é atemporal e complementa facilmente qualquer look. Seja para um visual casual ou como uma base para um conjunto mais elaborado, esta camiseta preta é uma peça essencial que nunca sai de moda.
             </p>
-            {/* <BuyButton 
-            nome="Red digital"
-            url={ProdutoDetail1}
-            onClick={AddCart}/> */}
           </div>
         </div>
       </section>
       <section className="my-5">
         <h4 className="text-center">Produtos</h4>
         <div className="row">
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto1} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto2} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto3} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto4} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto5} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto6} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto7} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto8} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho

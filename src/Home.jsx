@@ -164,11 +164,10 @@ function Home() {
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>
             </div>
-            <h2 className="my-2">Red Digital Watch</h2>
-            <h5 className="text-secondary">R$ 9999.99</h5>
+            <h2 className="my-2">Relógio Digital Vermelho</h2>
+            <h5 className="text-secondary">R$ 300.00</h5>
             <p className="my-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              ratione, nostrum cupiditate repellendus distinctio obcaecati!
+              Se você gosta de um relógio vermelho digital, você vai adorar este relógio digital vermelho. Util para momentos em que é necessário uma peça vermelha, mas ao mesmo tempo digital.
             </p>
             <a href="" className="btn btn-dark my-3">
               Adicionar ao carrinho

@@ -1,26 +1,26 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from 'react-bootstrap/Carousel';
-import img1Carousel from './assets/carrosel1.png';
-import img2Carousel from './assets/carrosel2.png';
-import img3Carousel from './assets/carrosel3.jpg';
-import Produto1 from './assets/fem_1.png';
-import Produto2 from './assets/fem_2.png';
-import Produto3 from './assets/fem_3.png';
-import Produto4 from './assets/product-4.jpg';
-import Produto5 from './assets/product-5.jpg';
-import Produto6 from './assets/product-6.jpg';
-import Produto7 from './assets/product-7.jpg';
-import Produto8 from './assets/product-8.jpg';
-import ProdutoDetail1 from './assets/product-detail-1.jpg';
-import ProdutoDetail2 from './assets/product-detail-2.jpg';
-import ProdutoDetail3 from './assets/product-detail-3.jpg';
-import ProdutoDetail4 from './assets/product-detail-4.jpg';
+import img1Carousel from './assets/feminino/fem_carrou_1.jpg';
+import img2Carousel from './assets/feminino/fem_carrou_2.jpg';
+import img3Carousel from './assets/feminino/fem_carrou_3.jpg';
+import Produto1 from './assets/feminino/fem_1.png';
+import Produto2 from './assets/feminino/fem_2.png';
+import Produto3 from './assets/feminino/fem_3.png';
+import Produto4 from './assets/feminino/fem_4.png';
+import Produto5 from './assets/feminino/fem_5.png';
+import Produto6 from './assets/feminino/fem_6.png';
+import Produto7 from './assets/feminino/fem_7.png';
+import Produto8 from './assets/feminino/fem_8.png';
+import ProdutoDetail1 from './assets/feminino/fem_9.png';
+import ProdutoDetail2 from './assets/feminino/fem_10.png';
+import ProdutoDetail3 from './assets/feminino/fem_11.png';
+import ProdutoDetail4 from './assets/feminino/fem_12.png';
 import "./css/feminino.css";
 
 function Feminino() {
   return (
     <>
-      <Carousel>
+      <Carousel className="Carrossel_fem">
         <Carousel.Item>
           <img
             src={img1Carousel}
@@ -92,65 +92,64 @@ function Feminino() {
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>
             </div>
-            <h2 className="my-2">Red Digital Watch</h2>
-            <h5 className="text-secondary">R$ 9999.99</h5>
+            <h2 className="my-2">Calça Jeans Grafite</h2>
+            <h5 className="text-secondary">R$ 350.00</h5>
             <p className="my-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              ratione, nostrum cupiditate repellendus distinctio obcaecati!
+              Se você gosta de uma calça grafite jeans, você vai adorar esta calça jeans grafite. 
+              Util para momentos em que é necessário uma calça jeans, mas ao mesmo tempo grafite.
             </p>
-            {/* <BuyButton 
-            nome="Red digital"
-            url={ProdutoDetail1}
-            onClick={AddCart}/> */}
+            <button className="btn btn-outline-dark my-3">
+              Adicionar ao Carrinho
+            </button>
           </div>
         </div>
       </section>
       <section className="my-5">
         <h4 className="text-center">Produtos</h4>
         <div className="row">
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto1} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto2} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto3} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto4} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto5} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto6} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto7} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto8} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
