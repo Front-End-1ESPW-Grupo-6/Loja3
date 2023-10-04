@@ -1,17 +1,13 @@
-.card_container{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    margin:90px;
-    }
+.section1 h1{
+    margin-top: 1em;
+}
+
+.Carrossel_fem img{
+    max-height: 512px;
+}
 
 .productImg img{
     padding: 1em;
     width: 352px;
     height: 23em;
-}
-
-.Carrossel_outlet img{
-    width: 100em;
-    height: 50em;
 }

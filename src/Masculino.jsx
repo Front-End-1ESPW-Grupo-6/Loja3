@@ -20,20 +20,20 @@ import "./css/masculino.css";
 function Masculino() {
   return (
     <>
-      <Carousel className="Carrossel_mas">
-        <Carousel.Item>
+      <Carousel>
+        <Carousel.Item className="Carrossel_mas">
           <img
             src={img1Carousel}
             alt="Image One"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="Carrossel_mas">
           <img
             src={img2Carousel}
             alt="Image TWo"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="Carrossel_mas">
           <img
             src={img3Carousel}
             alt="Image Three"
@@ -42,8 +42,8 @@ function Masculino() {
       </Carousel>
       
       
-      <section className="mb-5 px-5 bg-grey">
-        <h4 className="text-center">Destaque</h4>
+      <section className="mb-5 px-5 bg-grey section1">
+        <h1 className="text-center">Destaque</h1>
         <div className="row d-flex">
           <div className="col-md-2 my-3">
             <div className="row">
@@ -100,8 +100,8 @@ function Masculino() {
           </div>
         </div>
       </section>
-      <section className="my-5">
-        <h4 className="text-center">Produtos</h4>
+      <section className="my-5 section1">
+        <h1 className="text-center">Produtos</h1>
         <div className="row">
           <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto1} alt="" className="img-fluid" />

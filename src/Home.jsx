@@ -2,6 +2,7 @@ import {} from 'react';
 /*importando o bootstrap */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import "./css/casual.css";
 /*importando todas as imagens */
 import Imagem1 from './assets/produto-hero.jpg';
 import Img1 from './assets/cat-img-1.jpg';
@@ -44,15 +45,15 @@ function Home() {
       <section className="my-5">
         <h4 className="text-center">Produtos em destaque</h4>
         <div className="row">
-          <div className="col-md-4 my-3">
-            <img src={Img1} alt="" className="img-fluid" />
+          <div className="col-md-4 my-3 productImg1">
+            <img src={Img1} alt="" className="img-fluid " />
           </div>
-          <div className="col-md-4 my-3 d-flex flex-column justify-content-between align-items-center">
+          <div className="col-md-4 my-3 d-flex flex-column justify-content-between align-items-center productImg1">
             <img src={Img2} alt="" className="img-fluid" />
             <img src={Img3} alt="" className="img-fluid" />
           </div>
-          <div className="col-md-4 my-3">
-            <img src={Img4} alt="" className="img-fluid" />
+          <div className="col-md-4 my-3 productImg1">
+            <img src={Img1} alt="" className="img-fluid" />
           </div>
         </div>
       </section>
@@ -61,49 +62,49 @@ function Home() {
       <section className="my-5">
         <h4 className="text-center">Veja também</h4>
         <div className="row">
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto1} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto2} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto3} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto4} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto5} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto6} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto7} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
             </a>
           </div>
-          <div className="col-md-6 col-lg-3 my-3 text-center">
+          <div className="col-md-6 col-lg-3 my-3 text-center productImg">
             <img src={Produto8} alt="" className="img-fluid" />
             <a href="" className="btn btn-outline-dark my-3">
               Adicionar ao carrinho
