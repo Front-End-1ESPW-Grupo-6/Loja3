@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from 'react-bootstrap/Carousel';
-import img1Carousel from './assets/feminino/fem_carrou_1.jpg';
-import img2Carousel from './assets/feminino/fem_carrou_2.jpg';
-import img3Carousel from './assets/feminino/fem_carrou_3.jpg';
+import img1Carousel from './assets/feminino/fem_carrou_1.png';
+import img2Carousel from './assets/feminino/fem_carrou_2.png';
+import img3Carousel from './assets/feminino/fem_carrou_3.png';
 import Produto1 from './assets/feminino/fem_1.png';
 import Produto2 from './assets/feminino/fem_2.png';
 import Produto3 from './assets/feminino/fem_3.png';

@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from 'react-bootstrap/Carousel';
-import img1Carousel from './assets/mas_carrou_1.jpg';
-import img2Carousel from './assets/mas_carrou_2.jpg';
-import img3Carousel from './assets/mas_carrou_3.jpg';
+import img1Carousel from './assets/mas_carrou_1.png';
+import img2Carousel from './assets/mas_carrou_2.png';
+import img3Carousel from './assets/mas_carrou_3.png';
 import Produto1 from './assets//mas_1.png';
 import Produto2 from './assets/mas_2.png';
 import Produto3 from './assets/mas_3.png';

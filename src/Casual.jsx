@@ -13,7 +13,7 @@ import ProdutoDetail2 from "./assets/casual/casual-produto-10.jpeg";
 import ProdutoDetail3 from "./assets/casual/casual-produto-11.jpeg";
 import ProdutoDetail4 from "./assets/casual/casual-produto-12.jpeg";
 import Carousel from "react-bootstrap/Carousel";
-import img1Carousel from "./assets/casual/casuais-carrossel-1.jpg";
+import img1Carousel from "./assets/casual/casuais-carrossel-1.png";
 import img2Carousel from "./assets/casual/casuais-carrossel-2.png";
 import "./css/casual.css";
 
