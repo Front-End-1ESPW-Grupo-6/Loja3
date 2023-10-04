@@ -2,8 +2,12 @@
     margin-top: 1em;
 }
 
-.Carrossel_fem img{
-    max-height: 512px;
+.Carrossel_mas {
+    text-align: center;
+}
+
+.Carrossel_mas img{
+    width: 1012px;
 }
 
 .productImg img{

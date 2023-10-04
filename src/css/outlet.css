@@ -2,9 +2,14 @@
     margin-top: 1em;
 }
 
-.Carrossel_fem img{
-    max-height: 512px;
+.Carrossel_outlet {
+    text-align: center;
 }
+
+.Carrossel_outlet img{
+    width: 1012px;
+}
+
 
 .productImg img{
     padding: 1em;

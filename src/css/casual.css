@@ -7,8 +7,13 @@
 .productImg1 img{
   width: 80%;
 }
+
+.Carrossel_fem {
+  text-align: center;
+}
+
 .Carrossel_fem img{
-  max-height: 512px;
+  width: 1012px;
 }
 
 .productImg img{
