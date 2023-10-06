@@ -17,10 +17,53 @@ import ProdutoDetail1 from './assets/product-detail-1.jpg';
 import ProdutoDetail2 from './assets/product-detail-2.jpg';
 import ProdutoDetail3 from './assets/product-detail-3.jpg';
 import ProdutoDetail4 from './assets/product-detail-4.jpg';
+import Carousel from 'react-bootstrap/Carousel';
+import imgCasual from "./assets/casual/casuais-carrossel-1.png";
+import imgMas from './assets/mas_carrou_1.png';
+import imgFem from './assets/feminino/fem_carrou_1.png';
+import imgOutlet from './assets/outlet/out_carrou_1.png';
+import { Link } from 'react-router-dom'; 
 
 function Home() {
   return (
     <>
+    {/*section carrosel para outras páginas*/}
+      <section>
+      <Carousel>
+        <Carousel.Item className="Carrossel_casual">
+          <Link to='/casual' >
+            <img
+              src={imgCasual}
+              alt="Image One"
+            />  
+          </Link>
+        </Carousel.Item>
+        <Carousel.Item className="Carrossel_fem">
+          <Link to='/feminino'>
+            <img
+              src={imgFem}
+              alt="Image TWo"
+            />
+          </Link>
+        </Carousel.Item>
+        <Carousel.Item className="Carrossel_mas">
+          <Link to='/masculino'>
+            <img
+              src={imgMas}
+              alt="Image Three"
+            />
+          </Link>
+        </Carousel.Item>
+        <Carousel.Item className="Carrossel_outlet">
+          <Link to='outlet'>
+            <img
+              src={imgOutlet}
+              alt="Image Three"
+            />
+          </Link>
+        </Carousel.Item>
+      </Carousel>
+      </section>
     {/*section principal de imagem no home */}
       <section className="mb-4 p-5 bg-grey">
         <div className="row d-flex align-items-center justify-content-center hero">
@@ -36,6 +79,7 @@ function Home() {
           </div>
         </div>
       </section>
+      
       {/* section dos Produtos */}
 
       <section className="my-5">
